@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Distâncias Estelares</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Vídeo de background -->
+    <video autoplay muted loop id="bg-video">
+      <source src="assets/background.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Controles de Áudio -->
+    <div class="audio-controls">
+      <button id="play-audio" class="audio-btn" title="Tocar música">🎵</button>
+      <button id="pause-audio" class="audio-btn" title="Pausar música">⏸️</button>
+    </div>
+
+    <!-- Áudio de fundo (opcional) -->
+    <audio id="background-music" loop>
+      <source src="assets/theme.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Container principal -->
+    <div class="container">
+      <h1>🌟 Calculadora de Distâncias Estelares</h1>
+      <p class="subtitle">Calcule a distância entre estrelas usando coordenadas 3D</p>
+
+      <!-- Inputs para seleção de estrelas -->
+      <div class="input-section">
+        <div class="input-group">
+          <label for="estrela-partida">Estrela de Partida</label>
+          <select id="estrela-partida" class="star-select">
+            <option value="sol">Sol</option>
+            <option value="proxima">Proxima Centauri</option>
+            <option value="alpha-a">Alpha Centauri A</option>
+            <option value="alpha-b">Alpha Centauri B</option>
+            <option value="barnard">Estrela de Barnard</option>
+            <option value="sirius">Sirius A</option>
+            <option value="betelgeuse">Betelgeuse</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="estrela-destino">Estrela de Destino</label>
+          <select id="estrela-destino" class="star-select">
+            <option value="sol">Sol</option>
+            <option value="proxima" selected>Proxima Centauri</option>
+            <option value="alpha-a">Alpha Centauri A</option>
+            <option value="alpha-b">Alpha Centauri B</option>
+            <option value="barnard">Estrela de Barnard</option>
+            <option value="sirius">Sirius A</option>
+            <option value="betelgeuse">Betelgeuse</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Botões de ação -->
+      <div class="button-section">
+        <button class="glow-on-hover" id="btn-calcular" type="button">CALCULAR</button>
+        <button class="glow-on-hover" id="btn-voltar" type="button">VOLTAR</button>
+      </div>
+
+      <!-- Seção de resultados -->
+      <div class="result-section" id="result-section">
+        <h2>📊 Resultado</h2>
+        <div id="resultado-conteudo"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
