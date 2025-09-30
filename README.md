@@ -105,7 +105,7 @@ desafio_309/
 │
 ├── assets/
 │   ├── background.mp4      # Vídeo de fundo espacial
-│   └── background-music.mp3 # Música ambiente (opcional)
+│   └── theme.mp3 # Música ambiente (opcional)
 │
 └── README.md               # Documentação
 ```
@@ -120,7 +120,7 @@ cd desafio_309
 
 2. **Adicione os arquivos de mídia**
    - Coloque seu vídeo espacial em `assets/background.mp4`
-   - Adicione "Space Oddity" de David Bowie em `assets/background-music.mp3`
+   - Adicione "Space Oddity" de David Bowie em `assets/theme.mp3`
 
 3. **Abra no navegador**
 ```bash
